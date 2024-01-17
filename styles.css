@@ -46,25 +46,31 @@ header h2{
 
 body{
     background-color: #D7E5E8;
-    background-image: url(images/windkinda.png);
     background-size: 80em;
     background-repeat: no-repeat;
     background-position: 1px -40px;
     background-blend-mode:color-dodge;
-}
-
-/***body::before{
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
+    animation-duration: 18s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-name: waves;
+    animation-name: wave;
 }
 
-@keyframes waves{
-    from{opacity: 0;}
-    to{opacity: 100%;}
-}***/
+#wave{
+    background-image:url(images/windkinda.svg);
+    background-size: 80em;
+    background-repeat: no-repeat;
+    background-position: 1px -10px;
+    animation-duration: 20s;
+}
+
+@keyframes wave{
+    0%{background:#AEDDE1;}
+    20%{background:#D7E5E8;}
+    40%{background:#AEDDE1;}
+    60%{background:#D7E5E8;}
+    100%{background:#AEDDE1;}
+}
 
 main{
     display: flex;
@@ -107,6 +113,11 @@ ul li a{
     text-align: left;
     display: flex;
 }
+
+.leftside ul li a:hover{
+    color:#0C6D9C;
+    font-style: oblique;
+}
 /****STUDIOS SECTION END****/
 
 /****EXPERIMENT SECTION****/
@@ -120,6 +131,11 @@ ul li a{
     padding-right: 3em;
     text-align: left;
     display: flex;
+}
+
+.bottom ul li a:hover{
+    color:#0C6D9C;
+    font-style: oblique;
 }
 /****EXPERIMENT SECTION END****/
 
@@ -139,6 +155,11 @@ ul li a{
     text-align: left;
     display: flex;
 }
+
+.middle ul li a:hover{
+    color:#0C6D9C;
+    font-style: oblique;
+}
 /****R&D SECTION END****/
 
 /****FINAL PROJECT SECTION****/
@@ -157,6 +178,11 @@ ul li a{
     padding-right: 3em;
     text-align: left;
     display: flex;
+}
+
+.right ul li a:hover{
+    color:#0C6D9C;
+    font-style: oblique;
 }
 /****FINAL PROJECT SECTION END****/
 
