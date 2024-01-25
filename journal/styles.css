@@ -87,8 +87,9 @@ main h3{
 main div{
     background-color: #88CCDB;
     border-radius: 15px;
-    text-align: left;
+    text-align:justify;
     display: block;
+    padding-right: 2em;
     padding-left: 2em;
     padding-top: 3px;
     padding-bottom: 3px;

@@ -1,7 +1,5 @@
 /****BANNER STYLES****/
 header {
-    max-width: 1200px;
-    max-height: 250px;
     background-color: #0C6D9C;
     text-align: center;
     margin-top: -3.4em;
@@ -46,9 +44,7 @@ header h2{
 
 body{
     background-color: #D7E5E8;
-    background-size: 80em;
     background-repeat: no-repeat;
-    background-position: 1px -40px;
     background-blend-mode:color-dodge;
     animation-duration: 18s;
     animation-timing-function: linear;
@@ -58,9 +54,9 @@ body{
 
 #wave{
     background-image:url(images/windkinda.svg);
-    background-size: 80em;
+    background-size: 100em;
     background-repeat: no-repeat;
-    background-position: 1px -10px;
+    background-position: 1px -50px;
     animation-duration: 20s;
 }
 
@@ -74,7 +70,8 @@ body{
 
 main{
     display: flex;
-    padding-left: 9em;
+    margin-left: 18em;
+    margin-right: 18em;
 }
 
 main h2{
