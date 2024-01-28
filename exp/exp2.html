@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Hello and welcome to Experiment 1!</h1>
+    <h2>Would you like some food?</h2>
+ 
+    <script>
+        var hello = prompt("Please enter your name");
+        var food = ["panes rellenos", "curry w/ tofu", "tom yum soup", "carne asada"];
+        var replaceText = document.getElementsByTagName('h1');
+        var changeText = document.getElementsByTagName('h2');
+
+        function sayHi(){
+            console.log(`Hello ${hello}, and welcome!`);
+        }
+
+        for (var i=0; i<replaceText.length; i++){
+            replaceText[i].innerHTML = `Hello ${hello}, and welcome to Experiment 2!`;
+        }
+
+        function yayfood(name, yum){
+            console.log( sayHi(hello) );
+        }
+
+        function randomInt(min, max){
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+
+        for (var i=0; i<changeText.length; i++){
+            var randomFood = food[ randomInt(0, food.length-1) ];
+            changeText[i].innerHTML = (`${hello}, would you like some ${food[i]}?`);
+        }
+
+    </script>
+</body>
+</html>
