@@ -21,18 +21,6 @@ header h2{
     color: #FE8F00;
 }
 
-/**#greendude{
-    padding-right: -200px;
-    margin-bottom: -40px;
-    margin-top: -100px;
-}**/
-
-/**#pinkdude{
-    padding-right: -1em;
-    margin-bottom: -21px;
-    margin-top: -100px;
-}**/
-
 body{
     background-color: #D7E5E8;
     background-size: 80em;
@@ -45,11 +33,25 @@ body{
     animation-name: wave;
 }
 
+nav{
+    position:absolute; 
+}
+
+nav ul li{
+    list-style:none;
+    z-index:10px;
+}
+
+nav ul li a{
+    display:flex;
+    z-index:1px;
+}
+
 #wave{
     background-image:url(images/windkinda.svg);
-    background-size: 80em;
-    background-repeat: no-repeat;
-    background-position: 1px -10px;
+    background-size: 100em;
+    background-repeat:repeat-y;
+    background-position: 1px 80px;
     animation-duration: 20s;
 }
 
