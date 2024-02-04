@@ -1,16 +1,29 @@
 body{
     background-color: #641A35;
+    background-image: url(images/melon.png);
+    background-repeat: no-repeat;
+    background-size: 29em;
+    background-position: 29px 610px;
+}
+
+#bubble{
+    background-image: url(images/bubbletext.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 150px 490px;
 }
 
 header{
-    padding-top: 3em;
+    padding-top: 2em;
+    margin-right: -50;
+    position:absolute;
 }
 h1{
     font-family: Grandstander;
     font-weight: 400;
     color: #FFFFFF;
-    font-size: 3em;
-    padding-left: 3em;
+    font-size: 4.5em;
+    padding-left: 2em;
 }
 
 #one{
@@ -19,13 +32,13 @@ h1{
 
 #two{
     margin-bottom: -0.5em;
-    font-size: 3.5em;
+    font-size: 5.5em;
     font-weight: 600;
     color:#D6B600;
 }
 
 #three{
-    padding-left: 4.9em;
+    padding-left: 3.9em;
 }
 
 label{
@@ -45,6 +58,7 @@ input{
 form{
     display:flex;
     flex-direction: column;
+    padding-top: 10em;
     padding-left: 49em;
     padding-right: 15em;
 }
