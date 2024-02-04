@@ -1,0 +1,66 @@
+body{
+    background-color: #641A35;
+}
+
+header{
+    padding-top: 3em;
+}
+h1{
+    font-family: Grandstander;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 3em;
+    padding-left: 3em;
+}
+
+#one{
+    margin-bottom: -0.7em;
+}
+
+#two{
+    margin-bottom: -0.5em;
+    font-size: 3.5em;
+    font-weight: 600;
+    color:#D6B600;
+}
+
+#three{
+    padding-left: 4.9em;
+}
+
+label{
+    font-family: Inconsolata;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+input{
+    border-radius: 18px;
+    background-color: #380E1E;
+    color:#D6B600;
+    padding: 10px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    padding-left: 49em;
+    padding-right: 15em;
+}
+
+#food, #adj1, #adj2, #noun1, #noun2, #name, #music, #verb{
+    font-family: Inconsolata;
+    padding:0.3em;
+    margin-bottom:20px;
+    font-size: 20px;
+}
+
+
+#sendIt{
+    font-family: Inconsolata;
+    margin: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
