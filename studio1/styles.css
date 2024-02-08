@@ -2,36 +2,36 @@ body{
     background-color: #641A35;
     background-image: url(images/melon.png);
     background-repeat: no-repeat;
-    background-size: 29em;
-    background-position: 29px 610px;
+    background-size: 20em;
+    background-position: 80px 25.5em;
 }
 
 #bubble{
     background-image: url(images/bubbletext.png);
     background-repeat: no-repeat;
-    background-size: 200px;
-    background-position: 150px 490px;
+    background-size: 150px;
+    background-position: 150px 310px;
 }
 
 header{
-    padding-top: 2em;
+    padding-top: 0.3em;
     position:absolute;
 }
 h1{
     font-family: Grandstander;
     font-weight: 400;
     color: #FFFFFF;
-    font-size: 4.5em;
+    font-size: 3.6em;
     padding-left: 2em;
 }
 
 #one{
-    margin-bottom: -0.7em;
+    margin-bottom: -0.8em;
 }
 
 #two{
     margin-bottom: -0.5em;
-    font-size: 5.5em;
+    font-size: 4.6em;
     font-weight: 600;
     color:#D6B600;
 }
@@ -44,7 +44,7 @@ label{
     font-family: Inconsolata;
     color:#FFFFFF;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 input{
@@ -54,26 +54,31 @@ input{
     padding: 10px;
 }
 
+#ask4{
+    display: flex;
+    flex-direction: row;
+    padding-top: 8em;
+    padding-left: 45em;
+    padding-right: 18em;
+}
+
 form{
-    display:flex;
-    flex-direction: column;
-    padding-top: 10em;
-    padding-left: 49em;
-    padding-right: 15em;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 #food, #adj1, #adj2, #noun1, #noun2, #name, #music, #verb{
     font-family: Inconsolata;
-    padding:0.3em;
-    margin-bottom:20px;
+    padding:0.4em;
+    margin-bottom:15px;
     font-size: 20px;
 }
 
 
 #sendIt{
     font-family: Inconsolata;
-    margin: 50px;
-    font-size: 20px;
+    margin-left: 40.5em;
+    font-size: 21px;
     color: #FFFFFF;
 }
 
