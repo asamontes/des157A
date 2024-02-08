@@ -22,7 +22,7 @@
 
     <main>
         <div id="ask4">
-        <form>
+        <form id="daform">
             <label for="food">Your favorite (solid) food: </label><input type="text" id="food" required>
             <label for="adj1">An adjective: </label><input type="text" id="adj1" required>
             <label for="music">Your favorite band: </label><input type="text" id="music" required>
@@ -38,6 +38,14 @@
         <form>
             <input type="submit" id="sendIt" value="So did he roast you?">
         </form>
+
+        <section id="overlay" class="hidden">
+            <h1 class="innerH1">HAHA</h1>
+            <h1 class="innerH2">ROASTED!</h1>
+            <article id="madlib"></article>
+            <button class="close">Get Roasted Again?</button>
+            <img src="images/bigtext.svg" alt="big text bubble" width="650px" height="650px" id="textbub">
+        </section>
     </main>
     </div>
 </body>

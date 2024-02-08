@@ -26,11 +26,11 @@ h1{
 }
 
 #one{
-    margin-bottom: -0.8em;
+    margin-bottom: -1.1em;
 }
 
 #two{
-    margin-bottom: -0.5em;
+    margin-bottom: -0.7em;
     font-size: 4.6em;
     font-weight: 600;
     color:#D6B600;
@@ -82,3 +82,56 @@ form{
     color: #FFFFFF;
 }
 
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#overlay{
+    background-color: #641A35;
+    background-image: url(images/melon.png);
+    background-repeat: no-repeat;
+    background-size: 30em;
+    background-position: 14em 13em;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#textbub{
+    padding-left: 40em;
+    padding-top: 1em;
+}
+
+.close{
+    background-color: #380E1E;
+    font-family: Grandstander;
+    color: #D6B600;
+    border-radius: 20px;
+    padding:10px;
+    position: absolute;
+    margin-left: 80em;
+    margin-top: 34.6em;
+}
+
+.innerH2{
+    position: absolute;
+    font-size: 4.6em;
+    font-weight: 600;
+    color:#D6B600;
+    padding-top: 60px;
+}
+
+.innerH1{
+    margin-left: -20px;
+    position: absolute;
+    font-size: 4.6em;
+    font-weight: 600;
+    color:#FFFFFF;
+}
