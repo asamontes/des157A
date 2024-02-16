@@ -123,3 +123,9 @@ footer a{
 main div a{
     color: #821034;
 }
+
+figcaption{
+    color:#0C6D9C;
+    font-family: "Darumadrop One";
+    font-weight: 400;
+}
