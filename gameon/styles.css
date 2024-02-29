@@ -1,9 +1,9 @@
 body{
     background-color: #1B2825;
-    background-image: url(images/shakey.PNG);
+    background-image: url(images/silly.PNG);
     background-repeat: no-repeat;
     background-size: 50em;
-    background-position: 55% 7%;
+    background-position: 55% 13%;
     background-blend-mode:exclusion;
 }
 
@@ -13,14 +13,29 @@ h1{
     font-size: 60px;
     text-align: center;
     text-shadow: 1px 2px 3px darkred, 0 0 0.2em #BA3F42;
+    margin-top: 0.3em;
 }
 
 #spinbutton{
     position: absolute;
-    top:10%;
+    top:6%;
     left: 53%;
     width: 20vw;
     height: 40vh;
+}
+
+button{
+    background-color: #D8655E;
+    border: none;
+    border-radius: 20px;
+    color: #630000;
+    font-family: Life Savers;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 9px 30px 9px 30px;
+    position: absolute;
+    top:90%;
+    left:43%;
 }
 
 
