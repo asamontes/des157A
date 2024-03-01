@@ -24,7 +24,7 @@ h1{
     height: 40vh;
 }
 
-button{
+#tellme{
     background-color: #D8655E;
     border: none;
     border-radius: 20px;
@@ -36,6 +36,74 @@ button{
     position: absolute;
     top:90%;
     left:43%;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shown{
+    display: inline;
+    visibility: visible;
+    opacity: 1;
+}
+
+.close{
+    background-color:#b89826;
+    font-family: Irish Grover;
+    font-size: 30px;
+    color:rgb(232, 216, 143);
+    border-radius: 20px;
+    border:none;
+    padding: 9px 30px 9px 30px;
+    position: absolute;
+    top: 22%;
+    left:84%;
+    z-index:1;
+}
+
+#urFortune{
+    color: #BA3F42;
+    font-family: Life Savers;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -0.8em;
+}
+
+#urRoll{
+    margin-bottom: -0.5em;
+}
+
+#game{
+    background-color:#1B2825;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#bigsilly{
+    padding-left: 22em;
+    padding-top: 1em;
+    animation: slideIn 1s forwards, shakeV 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite 1s;
+}
+
+@keyframes slideIn{
+    0%{transform: translateY(500px)}
+    100%{transform: translateY(-100px)}
+}
+
+@keyframes shakeV{
+    0%   {transform:translateY(-100px);}
+    25%   {transform:translateY(-70px);}
+    50%  {transform:translateY(-100px);}
+    75%   {transform:translateY(-70px);}
+    100%  {transform:translateY(-100px);}
 }
 
 
