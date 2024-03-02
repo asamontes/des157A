@@ -88,7 +88,7 @@ h1{
 }
 
 #bigsilly{
-    padding-left: 22em;
+    padding-left: 2em;
     padding-top: 1em;
     animation: slideIn 1s forwards, shakeV 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite 1s;
 }
