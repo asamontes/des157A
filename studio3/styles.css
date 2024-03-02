@@ -106,5 +106,12 @@ h1{
     100%  {transform:translateY(-100px);}
 }
 
+audio{
+    display:block;
+    border-radius: 100px;
+    position: absolute;
+    top:100%;
+    left: 4%;
+}
 
 
