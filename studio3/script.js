@@ -5,6 +5,9 @@
     const startGame = document.querySelector('#tellme');
     const userRoll = document.querySelector('#urRoll');
     const fortune = document.querySelector('#urFortune');
+    const openEr = new Audio('sounds/opening.mp3');
+    const bell = new Audio('sounds/bell.mp3');
+    const diceUp = document.querySelector('.close')
     const gameData = {
         players: ['player'],
         score: 0,
@@ -44,7 +47,7 @@
 
         let myText;
         if(gameData.rollSum === 2){
-            myText = "Your car is going to break down but you'll get some money later in that same year.";
+            myText = "Your car is going to break down but you'll get some money later.";
         }
 
         else if(gameData.rollSum === 3){
@@ -85,5 +88,11 @@
         fortune.innerHTML = (myText);
     }
 
+    startGame.addEventListener('mousedown', function(){
+        openEr.play();
+    });
 
+    diceUp.addEventListener('mousedown', function(){
+        bell.play();
+    });
 })();
