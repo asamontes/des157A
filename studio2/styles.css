@@ -42,6 +42,7 @@ main{
 .pickme:hover {
     color: #ffffff;
     box-shadow: 0px 0px 5px 5px #ffffff;
+    z-index: 1;
   }
 
 .hidden{
@@ -68,4 +69,8 @@ main{
     width: 200vh;
     height: 200vw;
     z-index:0;
+}
+
+.pickme {
+
 }
