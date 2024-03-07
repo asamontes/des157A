@@ -62,6 +62,21 @@
         console.log(thisCorner);
         switch (thisCorner){
             case 'counter': theImg.className = 'counter'; break;
+        }; 
+    };
+
+    const slide = document.querySelector('#myimage');
+    const images =['counter1.jpg', 'fishtank.jpg', 'counter2.jpg']
+    let currentImage = 0;
+
+    document.querySelector(thisCorner).addEventListener('click', nextPhoto);
+
+    function nextPhoto(){
+        currentImage++;
+        if(currentImage > images.length - 1){
+            currentImage = 0;
         }
-    }
+        slide.src = `images/${images[currentImage]}`;
+    };
+
 })();
