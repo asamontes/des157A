@@ -129,3 +129,15 @@ figcaption{
     font-family: "Darumadrop One";
     font-weight: 400;
 }
+
+.pink{
+    position:absolute;
+    top: -436%;
+    left: 200%;
+}
+
+.green{
+    position:absolute;
+    bottom: 99%;
+    left: 3000%;
+}
