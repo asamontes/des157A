@@ -53,3 +53,8 @@ footer a{
 section{
     display: inline-block;
 }
+
+img{
+    position: relative;
+    left:10%;
+}
