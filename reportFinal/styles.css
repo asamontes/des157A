@@ -28,7 +28,7 @@ h2{
 p{
     font-family: Afacad;
     font-size: 23px;
-    display: inline;
+    display: block;
     color: rgb(220, 199, 172);
 }
 
@@ -48,4 +48,8 @@ footer{
 footer a{
     color:bisque;
     text-decoration: none;
+}
+
+section{
+    display: inline-block;
 }
