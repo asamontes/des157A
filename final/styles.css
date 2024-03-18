@@ -1,51 +1,117 @@
 body{
-    background-color:#6f1d11;
-}
-
-main{
-    display:inline-block;
-    margin-left: 20em;
-    margin-right: 20em;
-    padding: 20px;
-    background-color: #B03623;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px #461e18;
+    background-color: #1B2825;
+    background-image: url(images/silly.PNG);
+    background-repeat: no-repeat;
+    background-size: 50em;
+    background-position: 55% 13%;
+    background-blend-mode:exclusion;
 }
 
 h1{
+    font-family: Irish Grover;
+    color: #B63607;
+    font-size: 60px;
     text-align: center;
-    font-family: Jura;
-    font-size: 50px;
-    color:bisque;
+    text-shadow: 1px 2px 3px darkred, 0 0 0.2em #BA3F42;
+    margin-top: 0.3em;
 }
 
-h2{
-    font-family: Jura;
+#spinbutton{
+    position: absolute;
+    top:6%;
+    left: 53%;
+    width: 20vw;
+    height: 40vh;
+}
+
+#tellme{
+    background-color: #D8655E;
+    border: none;
+    border-radius: 20px;
+    color: #630000;
+    font-family: Life Savers;
+    font-weight: 800;
     font-size: 30px;
-    color:bisque;
+    padding: 9px 30px 9px 30px;
+    position: absolute;
+    top:90%;
+    left:43%;
 }
 
-p{
-    font-family: Afacad;
-    font-size: 23px;
+.hidden{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.shown{
     display: inline;
-    color: rgb(220, 199, 172);
+    visibility: visible;
+    opacity: 1;
 }
 
-article{
-    border-color: aliceblue;
-    border-width: 10px;
-    border-radius: 10px;
+.close{
+    background-color:#b89826;
+    font-family: Irish Grover;
+    font-size: 30px;
+    color:rgb(232, 216, 143);
+    border-radius: 20px;
+    border:none;
+    padding: 9px 30px 9px 30px;
+    position: absolute;
+    top: 22%;
+    left:84%;
+    z-index:1;
 }
 
-footer{
-    font-family: Jura;
-    font-size: 20px;
+#urFortune{
+    color: #BA3F42;
+    font-family: Life Savers;
+    font-size: 40px;
+    font-weight: 700;
     text-align: center;
-    margin:20px;
+    margin-bottom: -0.8em;
 }
 
-footer a{
-    color:bisque;
-    text-decoration: none;
+#urRoll{
+    margin-bottom: -0.5em;
 }
+
+#game{
+    background-color:#1B2825;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#bigsilly{
+    padding-left: 2em;
+    padding-top: 1em;
+    animation: slideIn 1s forwards, shakeV 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite 1s;
+}
+
+@keyframes slideIn{
+    0%{transform: translateY(500px)}
+    100%{transform: translateY(-100px)}
+}
+
+@keyframes shakeV{
+    0%   {transform:translateY(-100px);}
+    25%   {transform:translateY(-70px);}
+    50%  {transform:translateY(-100px);}
+    75%   {transform:translateY(-70px);}
+    100%  {transform:translateY(-100px);}
+}
+
+audio{
+    display:block;
+    border-radius: 100px;
+    position: absolute;
+    top:100%;
+    left: 4%;
+}
+
+

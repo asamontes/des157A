@@ -7,33 +7,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Creative Brief</title>
+    <script src="script.js" defer></script>
+    <title>Silly the Fortune Teller</title>
 </head>
 <body>
     <header>
-        <h1>Creative Brief</h1>
+        <h1>I'll Tell You Your Fortune</h1>
+        <div><img src="images/button.GIF" alt="spinning clothing button" id="spinbutton"></div>
     </header>
 
+    <button id="tellme" class="shown">tell me!</button>
+
+    <audio controls autoplay loop hidden>
+        <source src="sounds/SF_V2.mp3" type="audio/mp3">
+    </audio>
+
     <main>
-        <article>
-            <h2>Project Summary</h2>
-            <p>I will be updating my Studio 3, Game On project. Due to unforeseen circumstances I did not have a lot of time to work on this project and had to quickly come up with an idea. Since I am able to choose one project to expand on for the final, I want to go with my Studio 3. I like the graphics I made for this project and I can expand on the main idea of the project so that it is more game like.</p>
-        </article>
-
-        <article>
-            <h2>Project Description</h2>
-            <p>I mentioned above that the main idea of the project can use some fixing. By broadening my idea, the project will seem more game like. The project currently lacks a lot of features that allows for a user to experience my website. So to make it more interactive I want to add more features that allow for the user to respond to questions that lead them to one outcome. There will be multiple outcomes depending on what a user responds/chooses through out the ‘journey’ of the game. I think the design of the game is fine, I think it’s nice that it’s plain and simple. I will have to tweak it so that I can add more features for the addition of interactive buttons and more questions and overlays but it is doable. I will most likely focus on usability so I can make the page more interactive and lengthy. </p>
-        </article>
-
-        <article>
-            <h2>Expert Feedback</h2>
-            <p>I might want to ask one of my other design professors as well as one of the teachers assistants in class. While I do want to focus on usability, I also want to make sure that everything else looks and works fine.</p>
-        </article>
+        <section id="game" class="hidden">
+            <h1 id="urRoll"></h1>
+            <p id="urFortune"></p>
+            <img src="images/bigsilly.PNG" alt="blown up silly" id="bigsilly" width="1400" height="700">
+            <button class="close">roll again</button>
+        </section>
     </main>
-    <footer>
-        <a href="mailto:&#097;&#115;&#097;&#109;&#111;&#110;&#116;&#101;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;"> April Montes | &#097;&#115;&#097;&#109;&#111;&#110;&#116;&#101;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
-    </footer>
 </body>
 </html>
