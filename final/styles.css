@@ -79,13 +79,32 @@ h1{
 
 #game{
     background-color:#1B2825;
+    background-image: url(images/silly.PNG);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 60em;
+    background-position: -30% 1%;
     position:fixed;
     top: 0;
     left: 0;
-    width: 200vh;
-    height: 200vw;
+    width: 230vh;
+    height: 230vw;
     z-index:0;
 }
+
+.colorOvals{
+    position: absolute;
+    top: 5%;
+    left: 39%;
+}
+#topC{
+    display: flex;
+}
+
+#bottomC{
+    display: flex;
+}
+
 
 #bigsilly{
     padding-left: 2em;

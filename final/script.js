@@ -3,7 +3,10 @@
     console.log('reading JS');
 
     const startGame = document.querySelector('#tellme');
-    const userRoll = document.querySelector('#urRoll');
+    const userRoll = document.querySelector('#numRoll');
+    const color = {color1:'red', color2:'green', color3:'blue', color4:'purple'};
+    const buttons = {button1:'circle', button2:'triangle', button3:'star', button4:'square'};
+    const city = {city1:'tokyo', city2:'taipei', city3:'shanghai', city4:'sonsonate'};
     const fortune = document.querySelector('#urFortune');
     const openEr = new Audio('sounds/opening.mp3');
     const bell = new Audio('sounds/bell.mp3');
@@ -14,13 +17,13 @@
         roll1: 0,
         roll2: 0,
         rollSum: 0,
-        gameEnd: 12,
+        gameEnd: 30,
     };
 
     startGame.addEventListener('click', function(event){
         event.preventDefault();
         document.querySelector('#game').className = "shown";
-        throwDice();
+        userChoice();
     });
 
     document.querySelector('.close').addEventListener('click', function(event){
@@ -34,11 +37,15 @@
         }
     });
 
-    function throwDice(){
+    function userChoice(){
+
+    }
+
+    function daResults (){
         gameData.roll1 = Math.floor (Math.random() * 6) + 1;
         gameData.roll2 = Math.floor (Math.random() * 6) + 1;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
-        userRoll.innerHTML = `You rolled ${gameData.rollSum}`;
+        userRoll.innerHTML = `You rolled a total of ${gameData.rollSum}`;
         showFortune();
     }
 
