@@ -83,26 +83,19 @@ h1{
     background-blend-mode:exclusion;
     background-repeat: no-repeat;
     background-size: 60em;
-    background-position: -30% 1%;
+    background-position: -14% 7%;
     position:fixed;
     top: 0;
     left: 0;
-    width: 230vh;
-    height: 230vw;
+    width: 200vh;
+    height: 200vw;
     z-index:0;
 }
 
 .colorOvals{
     position: absolute;
-    top: 5%;
-    left: 39%;
-}
-#topC{
-    display: flex;
-}
-
-#bottomC{
-    display: flex;
+    top: 4%;
+    left: 34%;
 }
 
 

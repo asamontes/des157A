@@ -7,6 +7,7 @@
     const color = {color1:'red', color2:'green', color3:'blue', color4:'purple'};
     const buttons = {button1:'circle', button2:'triangle', button3:'star', button4:'square'};
     const city = {city1:'tokyo', city2:'taipei', city3:'shanghai', city4:'sonsonate'};
+    
     const fortune = document.querySelector('#urFortune');
     const openEr = new Audio('sounds/opening.mp3');
     const bell = new Audio('sounds/bell.mp3');
