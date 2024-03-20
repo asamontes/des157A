@@ -92,12 +92,121 @@ h1{
     z-index:0;
 }
 
+#game2{
+    background-color:#1B2825;
+    background-image: url(images/silly.PNG);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 60em;
+    background-position: -14% 7%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#game3{
+    background-color:#1B2825;
+    background-image: url(images/silly.PNG);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 60em;
+    background-position: -14% 7%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
 .colorOvals{
     position: absolute;
     top: 4%;
     left: 34%;
 }
 
+#response{
+    background-color:#1B2825;
+    background-image: url(images/border.png);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 1458px 758px;
+    background-position: 1% 0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#response1{
+    background-color:#1B2825;
+    background-image: url(images/border.png);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 1458px 758px;
+    background-position: 1% 0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+#response2{
+    background-color:#1B2825;
+    background-image: url(images/border.png);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 1458px 758px;
+    background-position: 1% 0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:0;
+}
+
+
+#comment1, #comment2, #comment3{
+    color: #BA3F42;
+    font-family: Life Savers;
+    font-size: 43px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+
+#numRoll, #numRoll1, #numRoll2{
+    font-family: Irish Grover;
+    color: #B63607;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 1px 2px 3px darkred, 0 0 0.2em #BA3F42;
+    position: relative;
+    top: 8.5%;
+}
+
+.next, .nextagain, .nextthrice{
+    background-color:#b89826;
+    font-family: Life Savers;
+    font-size: 40px;
+    color:rgb(232, 216, 143);
+    border-radius: 20px;
+    border:none;
+    padding: 9px 38px 9px 38px;
+    position: absolute;
+    top: 16%;
+    left:43%;
+    z-index:1;
+}
 
 #bigsilly{
     padding-left: 2em;

@@ -3,11 +3,12 @@
     console.log('reading JS');
 
     const startGame = document.querySelector('#tellme');
-    const userRoll = document.querySelector('#numRoll');
+    const userRoll = document.querySelector('totalNum');
     const color = {color1:'red', color2:'green', color3:'blue', color4:'purple'};
     const buttons = {button1:'circle', button2:'triangle', button3:'star', button4:'square'};
     const city = {city1:'tokyo', city2:'taipei', city3:'shanghai', city4:'sonsonate'};
-    
+    const firstRoll = document.querySelector('#numRoll');
+
     const fortune = document.querySelector('#urFortune');
     const openEr = new Audio('sounds/opening.mp3');
     const bell = new Audio('sounds/bell.mp3');
@@ -21,10 +22,10 @@
         gameEnd: 30,
     };
 
+    //opening the game
     startGame.addEventListener('click', function(event){
         event.preventDefault();
         document.querySelector('#game').className = "shown";
-        userChoice();
     });
 
     document.querySelector('.close').addEventListener('click', function(event){
@@ -38,9 +39,135 @@
         }
     });
 
+    //the first choice
+    document.querySelector('#circR').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response').className = 'shown';
+        userChoice();
+    });
+
+    document.querySelector('#circG').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response').className = 'shown';
+        userChoice();
+    });
+
+    document.querySelector('#circB').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response').className = 'shown';
+        userChoice();
+    });
+
+    document.querySelector('#circP').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response').className = 'shown';
+        userChoice();
+    });
+
     function userChoice(){
 
-    }
+        let theText;
+        if(color.color1){
+            theText = "You rolled your dice 3 times";
+        } 
+
+        else if(color.color2){
+            theText = "You rolled your dice 5 times";
+        }
+
+        else if(color.color3){
+            theText = "You rolled your dice 4 times";
+        }
+
+        else if(color.color4){
+            theText = "You rolled your dice 6 times";
+        }
+        numRoll.innerHTML = (theText);
+    };
+
+    // the second choice
+    document.querySelector('#circR').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response1').className = 'shown';
+        userChoice2();
+    });
+
+    document.querySelector('#circG').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response1').className = 'shown';
+        userChoice2();
+    });
+
+    document.querySelector('#circB').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response1').className = 'shown';
+        userChoice2();
+    });
+
+    document.querySelector('#circP').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#response1').className = 'shown';
+        userChoice2();
+    });
+
+    function userChoice2(){
+
+        let theText;
+        if(color.color1){
+            theText = "You rolled your dice 3 times";
+        } 
+
+        else if(color.color2){
+            theText = "You rolled your dice 5 times";
+        }
+
+        else if(color.color3){
+            theText = "You rolled your dice 4 times";
+        }
+
+        else if(color.color4){
+            theText = "You rolled your dice 6 times";
+        }
+        numRoll.innerHTML = (theText);
+    };
+
+    // the third choice
+    function userChoice3(){
+
+        let theText;
+        if(color.color1){
+            theText = "You rolled your dice 3 times";
+        } 
+
+        else if(color.color2){
+            theText = "You rolled your dice 5 times";
+        }
+
+        else if(color.color3){
+            theText = "You rolled your dice 4 times";
+        }
+
+        else if(color.color4){
+            theText = "You rolled your dice 6 times";
+        }
+        numRoll.innerHTML = (theText);
+    };
+
+    // the next buttons
+    document.querySelector('.next').addEventListener('click', function(event){
+        event.preventDefault();
+        document.querySelector('#game2').className = "shown";
+    });
+
+    document.querySelector('.next1').addEventListener('click', function(event){
+        event.preventDefault();
+        document.querySelector('#game3').className = "shown";
+    });
+
+    document.querySelector('.next').addEventListener('click', function(event){
+        event.preventDefault();
+        document.querySelector('#finalScreen').className = "shown";
+    });
 
     function daResults (){
         gameData.roll1 = Math.floor (Math.random() * 6) + 1;
@@ -48,7 +175,7 @@
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         userRoll.innerHTML = `You rolled a total of ${gameData.rollSum}`;
         showFortune();
-    }
+    };
 
     function showFortune(){
         document.querySelector('#game').className = 'shown'
@@ -94,7 +221,7 @@
             myText = ('If I tell you your fortune, the world will end.');
         }
         fortune.innerHTML = (myText);
-    }
+    };
 
     startGame.addEventListener('mousedown', function(){
         openEr.play();
