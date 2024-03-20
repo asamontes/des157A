@@ -7,7 +7,6 @@
     const color = {color1:'red', color2:'green', color3:'blue', color4:'purple'};
     const buttons = {button1:'circle', button2:'triangle', button3:'star', button4:'square'};
     const city = {city1:'tokyo', city2:'taipei', city3:'shanghai', city4:'sonsonate'};
-    const firstRoll = document.querySelector('#numRoll');
 
     const fortune = document.querySelector('#urFortune');
     const openEr = new Audio('sounds/opening.mp3');
@@ -30,7 +29,8 @@
 
     document.querySelector('.close').addEventListener('click', function(event){
         event.preventDefault();
-        document.querySelector('#game').className = "hidden";
+        document.querySelector('#finalScreen').className = "hidden";
+        document.querySelector('#game').className = "shown";
     });
 
     document.addEventListener('keydown', function(event){
@@ -42,25 +42,33 @@
     //the first choice
     document.querySelector('#circR').addEventListener('mousedown', function(event){
         event.preventDefault;
+        document.querySelector('#game').className = "hidden";
         document.querySelector('#response').className = 'shown';
+        bell.play();
         userChoice();
     });
 
     document.querySelector('#circG').addEventListener('mousedown', function(event){
         event.preventDefault;
+        document.querySelector('#game').className = "hidden";
         document.querySelector('#response').className = 'shown';
+        bell.play();
         userChoice();
     });
 
     document.querySelector('#circB').addEventListener('mousedown', function(event){
         event.preventDefault;
+        document.querySelector('#game').className = "hidden";
         document.querySelector('#response').className = 'shown';
+        bell.play();
         userChoice();
     });
 
     document.querySelector('#circP').addEventListener('mousedown', function(event){
         event.preventDefault;
+        document.querySelector('#game').className = "hidden";
         document.querySelector('#response').className = 'shown';
+        bell.play();
         userChoice();
     });
 
@@ -86,99 +94,144 @@
     };
 
     // the second choice
-    document.querySelector('#circR').addEventListener('mousedown', function(event){
+    document.querySelector('#mustard').addEventListener('mousedown', function(event){
         event.preventDefault;
-        document.querySelector('#response1').className = 'shown';
+        document.querySelector('#game2').className = 'hidden';
+        document.querySelector('#response2').className = 'shown';
+        bell.play();
         userChoice2();
     });
 
-    document.querySelector('#circG').addEventListener('mousedown', function(event){
+    document.querySelector('#peach').addEventListener('mousedown', function(event){
         event.preventDefault;
-        document.querySelector('#response1').className = 'shown';
+        document.querySelector('#game2').className = 'hidden';
+        document.querySelector('#response2').className = 'shown';
+        bell.play();
         userChoice2();
     });
 
-    document.querySelector('#circB').addEventListener('mousedown', function(event){
+    document.querySelector('#burple').addEventListener('mousedown', function(event){
         event.preventDefault;
-        document.querySelector('#response1').className = 'shown';
+        document.querySelector('#game2').className = 'hidden';
+        document.querySelector('#response2').className = 'shown';
+        bell.play();
         userChoice2();
     });
 
-    document.querySelector('#circP').addEventListener('mousedown', function(event){
+    document.querySelector('#burgandy').addEventListener('mousedown', function(event){
         event.preventDefault;
-        document.querySelector('#response1').className = 'shown';
+        document.querySelector('#game2').className = 'hidden';
+        document.querySelector('#response2').className = 'shown';
+        bell.play();
         userChoice2();
     });
 
     function userChoice2(){
 
-        let theText;
-        if(color.color1){
-            theText = "You rolled your dice 3 times";
+        let theText2;
+        if(buttons.button1){
+            theText2 = "You rolled your dice 3 times";
         } 
 
-        else if(color.color2){
-            theText = "You rolled your dice 5 times";
+        else if(buttons.button2){
+            theText2 = "You rolled your dice 1 times";
         }
 
-        else if(color.color3){
-            theText = "You rolled your dice 4 times";
+        else if(buttons.button3){
+            theText2 = "You rolled your dice 2 times";
         }
 
-        else if(color.color4){
-            theText = "You rolled your dice 6 times";
+        else if(buttons.button4){
+            theText2 = "You rolled your dice 4 times";
         }
-        numRoll.innerHTML = (theText);
+        numRoll1.innerHTML = (theText2);
     };
 
     // the third choice
+
+    document.querySelector('#tokyo').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#game3').className = 'hidden';
+        document.querySelector('#response3').className = 'shown';
+        bell.play();
+        userChoice3();
+    });
+
+    document.querySelector('#taipei').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#game3').className = 'hidden';
+        document.querySelector('#response3').className = 'shown';
+        bell.play();
+        userChoice3();
+    });
+
+    document.querySelector('#shangh').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#game3').className = 'hidden';
+        document.querySelector('#response3').className = 'shown';
+        bell.play();
+        userChoice3();
+    });
+
+    document.querySelector('#sonso').addEventListener('mousedown', function(event){
+        event.preventDefault;
+        document.querySelector('#game3').className = 'hidden';
+        document.querySelector('#response3').className = 'shown';
+        bell.play();
+        userChoice3();
+    });
+
     function userChoice3(){
 
-        let theText;
-        if(color.color1){
-            theText = "You rolled your dice 3 times";
+        let theText3;
+        if(city.city1){
+            theText3 = "You rolled your dice 5 times";
         } 
 
-        else if(color.color2){
-            theText = "You rolled your dice 5 times";
+        else if(city.city2){
+            theText3 = "You rolled your dice 6 times";
         }
 
-        else if(color.color3){
-            theText = "You rolled your dice 4 times";
+        else if(city.city3){
+            theText3 = "You rolled your dice 8 times";
         }
 
-        else if(color.color4){
-            theText = "You rolled your dice 6 times";
+        else if(city.city4){
+            theText3 = "You rolled your dice 9 times";
         }
-        numRoll.innerHTML = (theText);
+        numRoll2.innerHTML = (theText3);
     };
 
     // the next buttons
     document.querySelector('.next').addEventListener('click', function(event){
         event.preventDefault();
+        document.querySelector('#response').className = "hidden";
         document.querySelector('#game2').className = "shown";
     });
 
-    document.querySelector('.next1').addEventListener('click', function(event){
+    document.querySelector('.nextagain').addEventListener('click', function(event){
         event.preventDefault();
+        document.querySelector('#response2').className = 'hidden';
         document.querySelector('#game3').className = "shown";
     });
 
-    document.querySelector('.next').addEventListener('click', function(event){
+    document.querySelector('.nextthrice').addEventListener('click', function(event){
         event.preventDefault();
+        document.querySelector('#response3').className = "hidden";
         document.querySelector('#finalScreen').className = "shown";
+        openEr.play();
+        daResults();
     });
 
     function daResults (){
         gameData.roll1 = Math.floor (Math.random() * 6) + 1;
         gameData.roll2 = Math.floor (Math.random() * 6) + 1;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
-        userRoll.innerHTML = `You rolled a total of ${gameData.rollSum}`;
+        totalNum.innerHTML = `You rolled a total of ${gameData.rollSum}`;
         showFortune();
     };
 
     function showFortune(){
-        document.querySelector('#game').className = 'shown'
 
         let myText;
         if(gameData.rollSum === 2){
@@ -225,9 +278,5 @@
 
     startGame.addEventListener('mousedown', function(){
         openEr.play();
-    });
-
-    diceUp.addEventListener('mousedown', function(){
-        bell.play();
     });
 })();

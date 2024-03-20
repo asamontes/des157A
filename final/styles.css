@@ -104,7 +104,7 @@ h1{
     left: 0;
     width: 200vh;
     height: 200vw;
-    z-index:0;
+    z-index:1;
 }
 
 #game3{
@@ -119,31 +119,31 @@ h1{
     left: 0;
     width: 200vh;
     height: 200vw;
-    z-index:0;
+    z-index:1;
 }
 
+/* the group of options */
 .colorOvals{
     position: absolute;
     top: 4%;
     left: 34%;
 }
 
-#response{
-    background-color:#1B2825;
-    background-image: url(images/border.png);
-    background-blend-mode:exclusion;
-    background-repeat: no-repeat;
-    background-size: 1458px 758px;
-    background-position: 1% 0%;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 200vh;
-    height: 200vw;
-    z-index:0;
+.colorButtons{
+    position: absolute;
+    top: 4%;
+    left: 34%;
 }
 
-#response1{
+.citiesWOO{
+    position: absolute;
+    top: 4.5%;
+    left: 36%;
+}
+
+
+/* silly's responses to user */
+#response{
     background-color:#1B2825;
     background-image: url(images/border.png);
     background-blend-mode:exclusion;
@@ -173,6 +173,21 @@ h1{
     z-index:0;
 }
 
+#response3{
+    background-color:#1B2825;
+    background-image: url(images/border.png);
+    background-blend-mode:exclusion;
+    background-repeat: no-repeat;
+    background-size: 1458px 758px;
+    background-position: 1% 0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:1;
+}
+/* end responses*/
 
 #comment1, #comment2, #comment3{
     color: #BA3F42;
@@ -225,6 +240,16 @@ h1{
     50%  {transform:translateY(-100px);}
     75%   {transform:translateY(-70px);}
     100%  {transform:translateY(-100px);}
+}
+
+#finalScreen{
+    background-color:#1B2825;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 200vw;
+    z-index:1;
 }
 
 audio{
